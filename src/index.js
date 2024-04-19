@@ -1,5 +1,4 @@
 function displayRecipe(response) {
-  console.log("recipe generated");
   new Typewriter("#recipe", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,8 +21,6 @@ function generateRecipe(event) {
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `<div class="blink">⏳ Generating a yummy recipe for you</div>`;
-
-  console.log("generating recipe");
 
   // make a call to the API using axios
   axios.get(apiUrl).then(displayRecipe);

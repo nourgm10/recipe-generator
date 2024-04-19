@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Recipe Generator</title>
@@ -38,11 +39,11 @@
             required
             autocomplete="off"
             class="ingredients"
+            id="ingredients"
           />
           <input type="submit" class="button" />
         </form>
-        <div class="recipe" id="recipe">
-        </div>
+        <div class="recipe" id="recipe"></div>
       </div>
     </main>
 
